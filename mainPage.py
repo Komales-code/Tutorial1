@@ -164,9 +164,6 @@ with right:
 
     st.markdown('<div class="resume-box">', unsafe_allow_html=True)
     st.header("📄 Resume PDF")
-
-    st.markdown('<div class="resume-box">', unsafe_allow_html=True)
-    st.header("📄 Resume PDF")
     if st.button("⬇️ Generate Resume PDF"):
         st.info("This is a placeholder button (no PDF generated yet).")
     st.markdown('</div>', unsafe_allow_html=True)
