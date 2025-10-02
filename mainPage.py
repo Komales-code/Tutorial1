@@ -1,38 +1,60 @@
 import streamlit as st
 
+# --- Page Config ---
+st.set_page_config(page_title="My Resume", page_icon=":briefcase:", layout="wide")
 
-# Title
-st.title("John Doe's Resume")
+# --- Profile Picture and Name ---
+col1, col2 = st.columns([1, 3])
 
-# Contact Information
-st.header("📞 Contact Information")
-st.write("📧 Email: john.doe@example.com")
-st.write("📱 Phone: (123) 456-7890")
-st.write("🔗 LinkedIn: [linkedin.com/in/johndoe](https://linkedin.com/in/johndoe)")
+with col1:
+    st.image("profile.jpg", width=150)  # Replace with your photo file
 
-# Education
+with col2:
+    st.title("Your Full Name")
+    st.write("📧 your.email@example.com | 📱 (123) 456-7890 | 🌐 [LinkedIn](https://linkedin.com/in/yourprofile)")
+    st.write("💼 Short tagline or summary about you (e.g., Data Analyst | Python Developer | Problem Solver)")
+
+# --- Education ---
 st.header("🎓 Education")
-st.markdown("**B.Sc. in Computer Science**, University of Example, 2023")
+st.write("**Bachelor of Computer Science**, University Name (2021 - 2025)")
+st.write("Relevant Coursework: Data Structures, Machine Learning, Software Engineering")
 
-# Work Experience
+# --- Work Experience ---
 st.header("💼 Work Experience")
-st.markdown("**Software Engineer Intern**, Example Corp (2023)")
-st.write("- Developed and maintained internal tools using Python and Flask.")
-st.write("- Collaborated with cross-functional teams to improve app performance.")
+st.subheader("Software Intern | Tech Company (Jun 2024 – Aug 2024)")
+st.write("""
+- Built a Streamlit dashboard to visualize customer analytics.  
+- Automated daily reporting tasks using Python and Excel.  
+- Improved system performance by 15%.  
+""")
 
-# Skills
-st.header("🛠️ Skills")
-skills = ["Python", "Streamlit", "SQL", "Git", "HTML/CSS"]
-for skill in skills:
-    st.write(f"- {skill}")
+st.subheader("Freelance Web Developer (2023 – Present)")
+st.write("""
+- Developed responsive websites for small businesses.  
+- Implemented booking systems and e-commerce features.  
+""")
 
-# Projects
-st.header("📁 Projects")
-st.markdown("**Portfolio Website** – A personal website built with HTML, CSS, and JavaScript to showcase my work.")
-st.markdown("**Data Dashboard** – An interactive dashboard built using Streamlit and Pandas.")
+# --- Skills ---
+st.header("🛠 Skills")
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.write("- Python")
+    st.write("- SQL")
+with col2:
+    st.write("- Streamlit")
+    st.write("- Git/GitHub")
+with col3:
+    st.write("- Problem Solving")
+    st.write("- Communication")
 
-# Optional: Add a Download Resume Button
-with open("resume.pdf", "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
+# --- Projects ---
+st.header("📂 Projects")
+st.write("**Personal Portfolio Website** – Designed a personal website to showcase projects using Streamlit.")
+st.write("**Data Analysis Project** – Analyzed sales data and built visual dashboards in Python.")
+st.write("**Mobile App (Team Project)** – Created a professor appointment booking app with Flutter & Firebase.")
 
-st.download_button(label="📄 Download My Resume", data=PDFbyte, file_name="John_Doe_Resume.pdf", mime='application/pdf')
+# --- Achievements ---
+st.header("🏆 Achievements")
+st.write("- Dean’s List (2022, 2023)")
+st.write("- Winner, Hackathon 2024 – Built AI-powered study assistant")
+st.write("- Certified in Google Data Analytics (2025)")
