@@ -1,90 +1,114 @@
 import streamlit as st
 
 # --- Page Config ---
-st.set_page_config(page_title="Resume | Your Name", page_icon=":briefcase:", layout="wide")
+st.set_page_config(page_title="Resume | Komaleswari Deva", page_icon=":briefcase:", layout="wide")
 
 # --- Hero Section ---
 col1, col2 = st.columns([1, 4], gap="small")
 
 with col1:
-    st.image("profile.jpg", width=180)  # Your profile photo
+    st.image("profile.jpg", width=180)  # Replace with your profile photo (JPEG/PNG)
 
 with col2:
-    st.title("Your Full Name")
-    st.write("💼 Job Title | 🎓 Degree | 🌍 Location")
-    st.write("📧 your.email@example.com | 📱 +60-123-456-789 | 🔗 [LinkedIn](https://linkedin.com/in/yourprofile) | 🐙 [GitHub](https://github.com/yourusername)")
+    st.title("Komaleswari Deva")
+    st.write("💻 IT Student | Universiti Malaysia Kelantan")
+    st.write("📧 komales047@gmail.com | 📱 +60 16-2309130")
+    st.write("🏠 No.9, Jalan Kemboja 6, Taman Aman, 42700 Banting, Selangor")
     st.markdown("---")
 
-# --- Summary ---
-st.subheader("👋 Summary")
+# --- Career Objective ---
+st.subheader("🎯 Career Objective")
 st.write(
     """
-    Motivated and detail-oriented professional with experience in **software development, data analysis, and project management**. 
-    Skilled at building web apps, visualizing data, and solving complex problems with creative solutions.
+    Motivated and hardworking Information Technology student currently pursuing a Bachelor’s degree.  
+    Skilled in programming, database management, and web application development.  
+    Seeking opportunities to apply technical knowledge and interpersonal skills in real-world IT projects 
+    while continuously learning and contributing to organizational success.
     """
 )
 st.markdown("---")
 
 # --- Education ---
 st.subheader("🎓 Education")
-st.write("**Bachelor of Computer Science** – University Name (2021 - 2025)")
-st.write("Relevant Coursework: Data Structures, AI, Database Systems, Software Engineering")
+st.write("**Bachelor of Information Technology (Hons.)**, Universiti Malaysia Kelantan (2023 – Present) | Current CGPA: 3.46")
+st.write("**Diploma in Information Technology**, Politeknik Seberang Perai (2021 – 2023) | CGPA: 3.81")
+st.write("**Sijil Pelajaran Malaysia (SPM)**, SMK Methodist Telok Datok (2019)")
 st.markdown("---")
 
-# --- Experience ---
+# --- Work Experience ---
 st.subheader("💼 Work Experience")
-
-st.markdown("**Software Intern | Tech Company** (Jun 2024 – Aug 2024)")
+st.markdown("**Trainee | Ibu Pejabat Daerah Kuala Langat** (Jan 2023 – Jun 2023)")
 st.write(
     """
-    - Built a customer dashboard using Streamlit & Python  
-    - Automated reporting system with Pandas & Excel, reducing manual work by 40%  
-    - Collaborated with a 5-member team in an Agile environment  
-    """
-)
-
-st.markdown("**Freelance Web Developer** (2023 – Present)")
-st.write(
-    """
-    - Designed and deployed responsive websites for 4+ small businesses  
-    - Implemented online booking and e-commerce features using Django & Firebase  
+    - Maintained details by entering new and updated case files.  
+    - Developed a system to update information.  
     """
 )
 st.markdown("---")
 
 # --- Skills ---
-st.subheader("🛠 Skills")
-
+st.subheader("🛠 Technical Skills")
 col1, col2, col3 = st.columns(3)
+
 with col1:
-    st.write("- Python")
-    st.write("- SQL")
-    st.write("- Streamlit")
+    st.write("- MS Office")
+    st.write("- VB Studio")
+    st.write("- Adobe Animate")
 with col2:
-    st.write("- Git/GitHub")
-    st.write("- HTML/CSS/JS")
-    st.write("- Flask/Django")
+    st.write("- HTML & CSS")
+    st.write("- PHP")
+    st.write("- Java")
 with col3:
-    st.write("- Data Visualization")
-    st.write("- Problem Solving")
-    st.write("- Communication")
+    st.write("- Python")
+    st.write("- Android Studio")
+    st.write("- GUI Programming")
+
+st.subheader("🌟 Personal Attributes")
+st.write(
+    """
+    - Fast learner  
+    - Active listener  
+    - Information literacy  
+    - Team player  
+    - Innovative  
+    - Easy adaptability  
+    - Positive attitude  
+    """
+)
 st.markdown("---")
 
-# --- Projects ---
-st.subheader("📂 Projects")
-
-st.markdown("**Personal Portfolio Website** – Built with Streamlit, deployed on Streamlit Cloud")
-st.markdown("**Data Analysis Dashboard** – Interactive sales analytics dashboard with Pandas & Matplotlib")
-st.markdown("**Mobile App (Team Project)** – Professor Appointment Booking App using Flutter & Firebase")
+# --- Languages ---
+st.subheader("🌐 Languages")
+st.write("- English: Proficient")
+st.write("- Malay: Proficient")
+st.write("- Tamil: Native (Proficient)")
 st.markdown("---")
 
 # --- Achievements ---
 st.subheader("🏆 Achievements")
-st.write("- Dean’s List (2022, 2023)")
-st.write("- Hackathon Winner 2024 – Built AI-powered study assistant")
-st.write("- Certified in Google Data Analytics (2025)")
+st.write("**Final Year Project (Diploma)** – Developed a Physiotherapy Centre Web Application using HTML, CSS, PHP, JS, MySQL")
+st.write("**Academic Excellence** – Diploma CGPA: 3.81")
+st.write("**Kabaddi Competition 2016** – 2nd Place")
+st.write("**Short Story Writing Competition 2018** – Consolation Prize")
 st.markdown("---")
 
+# --- Co-curricular & Leadership ---
+st.subheader("🤝 Co-Curricular & Leadership Activities")
+st.write("**2024 | Fun Run (Sultan Selangor Birthday)** – Completed 6km run")
+st.write("**2024 | Aviraa 1.0 (UMK)** – Facilitator, assisted in event coordination")
+st.write("**2019 | Kabaddi Club (SMK Methodist Telok Datok)** – Vice Secretary, managed meetings & correspondence")
+st.write("**2019 | Girl Squad (SMK Methodist Telok Datok)** – Secretary, organized meetings & administration")
+st.markdown("---")
+
+# --- Interests ---
+st.subheader("🎯 Interests")
+st.write("Hiking | Running | Badminton | Travelling | Cooking")
+st.markdown("---")
+
+# --- Referees ---
+st.subheader("📞 Referees")
+st.write("**Ts. Dr. Nor Alina Binti Ismail** – Advisor, University Malaysia Kelantan | 📱 +60 19-2200139")
+
 # --- Download Resume Button ---
-with open("resume.pdf", "rb") as file:
-    st.download_button("📄 Download My Resume", file, "resume.pdf", mime="application/pdf")
+with open("KOMALESWARI DEVA.pdf", "rb") as pdf_file:
+    st.download_button("📄 Download My Resume (PDF)", pdf_file, "Komaleswari_Deva_Resume.pdf", mime="application/pdf")
