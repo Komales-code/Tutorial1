@@ -99,9 +99,9 @@ with left:
     st.markdown('<div class="resume-box">', unsafe_allow_html=True)
     st.header("🛠 Skills")
     st.subheader("Technical Skills")
-    st.write("- MS Office\n- VB Studio\n- Adobe Animate\n- HTML & CSS\n- PHP\n- Java\n- Python\n- Android Studio\n- GUI Programming")
+    st.write("- MS Office\n- VB Studio\n- Adobe Animate\n- HTML & CSS")
     st.subheader("Personal Attributes")
-    st.write("- Fast learner\n- Active listener\n- Information literacy\n- Team player\n- Innovative\n- Easy adaptability\n- Positive attitude")
+    st.write("- Fast learner\n- Active listener\n- Information literacy\n- Team player")
     st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown('<div class="resume-box">', unsafe_allow_html=True)
@@ -120,10 +120,7 @@ with right:
     st.header("🎯 Career Objective")
     st.write(
         """
-        Motivated and hardworking Information Technology student currently pursuing a Bachelor’s degree.  
-        Skilled in programming, database management, and web application development.  
-        Seeking opportunities to apply technical knowledge and interpersonal skills in real-world IT projects 
-        while continuously learning and contributing to organizational success.
+        Motivated and hardworking Information Technology student currently pursuing a Bachelor’s degree. Skilled in programming, database management, and web application development.
         """
     )
     st.markdown('</div>', unsafe_allow_html=True)
@@ -146,15 +143,12 @@ with right:
     st.write("- Final Year Project: Physiotherapy Centre Web Application (HTML, CSS, PHP, JS, MySQL)")
     st.write("- Academic Excellence: Diploma CGPA 3.81")
     st.write("- Kabaddi Competition 2016 – 2nd Place")
-    st.write("- Short Story Writing Competition 2018 – Consolation Prize")
     st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown('<div class="resume-box">', unsafe_allow_html=True)
     st.header("🤝 Co-Curricular & Leadership")
     st.write("**2024 | Fun Run (Sultan Selangor Birthday)** – Completed 6km run")
     st.write("**2024 | Aviraa 1.0 (UMK)** – Facilitator, assisted in event coordination")
-    st.write("**2019 | Kabaddi Club** – Vice Secretary, managed meetings & correspondence")
-    st.write("**2019 | Girl Squad** – Secretary, organized meetings & administration")
     st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown('<div class="resume-box">', unsafe_allow_html=True)
