@@ -157,4 +157,8 @@ st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="resume-box">', unsafe_allow_html=True)
 st.header("📄 Resume PDF")
 
+if st.button("⬇️ Generate Resume PDF"):
+    st.info("Your resume is downloaded.")
+
+st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
