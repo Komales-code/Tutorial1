@@ -178,14 +178,8 @@ st.markdown('</div>', unsafe_allow_html=True)
 st.markdown('<div class="resume-box">', unsafe_allow_html=True)
 st.header("📄 Resume PDF")
 
-try:
-    with open("resume.pdf", "rb") as pdf_file:
-        st.download_button(
-            "⬇️ Download My Resume",
-            pdf_file,
-            "Komaleswari_Deva_Resume.pdf",
-            mime="application/pdf"
-        )
-except FileNotFoundError:
-    st.error("⚠️ Resume PDF not found. Please upload `resume.pdf` to the repo.")
+# Just a button, no function
+if st.button("⬇️ Generate Resume PDF"):
+    st.info("This button is a placeholder. PDF generation not yet implemented.")
+
 st.markdown('</div>', unsafe_allow_html=True)
