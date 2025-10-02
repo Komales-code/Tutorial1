@@ -67,9 +67,9 @@ st.markdown(
 )
 
 # --- Header Section ---
-col1, col2 = st.columns([1, 4], gap="small")
+col1, col2 = st.columns([1, 5], gap="small")
 with col1:
-    st.image("profile.jpg", width=150)  # Profile photo
+    st.image("profile.jpg", width=100)  # Profile photo
 with col2:
     st.title("Komaleswari Deva")
     st.write("💻 IT Student | Universiti Malaysia Kelantan")
