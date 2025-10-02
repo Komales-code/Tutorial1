@@ -167,7 +167,7 @@ st.header("📄 Resume PDF")
 
 # Create 3 columns and put button in the middle
 col1, col2, col3 = st.columns([1,2,1])
-with col2:
+with col3:
     if st.button("⬇️ Generate Resume PDF"):
         st.info("This is a placeholder button (no PDF generated yet).")
 
