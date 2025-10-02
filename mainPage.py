@@ -3,6 +3,40 @@ import streamlit as st
 st.markdown(
     """
     <style>
+
+    st.markdown(
+    /* Reduce overall font size */
+    .stApp {
+        font-size: 14px;
+    }
+
+    /* Resize headers */
+    h1 { font-size: 26px !important; }
+    h2 { font-size: 18px !important; }
+    h3 { font-size: 16px !important; }
+
+    /* Compact resume boxes */
+    .resume-box {
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    /* Reduce line spacing */
+    .stMarkdown p {
+        margin-bottom: 5px;
+    }
+
+    /* Force app to show all in one screen */
+    .block-container {
+        max-width: 1000px;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    unsafe_allow_html=True
+)
+
     .stApp {
         background-color: #2C2C2C; 
         color: #F5F5F5;            
