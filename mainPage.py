@@ -106,7 +106,9 @@ st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Skills ---
 st.markdown('<div class="resume-box">', unsafe_allow_html=True)
-st.header("🛠 Technical Skills")
+st.header("🛠 Skills")
+
+st.subheader("Technical Skills")
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -123,17 +125,18 @@ with col3:
     st.write("- GUI Programming")
 
 st.subheader("🌟 Personal Attributes")
-st.write(
-    """
-    - Fast learner  
-    - Active listener  
-    - Information literacy  
-    - Team player  
-    - Innovative  
-    - Easy adaptability  
-    - Positive attitude  
-    """
-)
+col4, col5, col6 = st.columns(3)
+
+with col4:
+    st.write("- Fast Learner")
+    st.write("- Active Listener")
+    st.write("- Information Literacy")
+
+with col5:
+    st.write("- Team Player")
+    st.write("- Innovative")
+    st.write("- Easy Adaptability")
+
 st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Languages ---
