@@ -1,7 +1,5 @@
 import streamlit as st
 
-# Profile Picture (Optional)
-st.image("profile.jpg", width=150)  # Make sure you have a profile.jpg in your directory
 
 # Title
 st.title("John Doe's Resume")
