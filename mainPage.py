@@ -65,29 +65,14 @@ st.markdown(
 col1, col2 = st.columns([1, 4], gap="small")
 
 with col1:
-    st.image("profile.jpg", width=180)  # Make sure profile.jpeg is in repo
+    st.image("profile.jpeg", width=180)  # Make sure profile.jpeg is in repo
 
 with col2:
     st.title("Komaleswari Deva")
     st.write("💻 IT Student | Universiti Malaysia Kelantan")
+    st.write("📧 **komales047@gmail.com** | 📱 **+60 16-2309130**")
+    st.write("🏠 No.9, Jalan Kemboja 6, Taman Aman, 42700 Banting, Selangor")
     st.markdown("---")
-
-# --- Personal Profile ---
-st.markdown('<div class="resume-box">', unsafe_allow_html=True)
-st.header("👤 Personal Profile")
-st.write("**Age:** 23 Years Old")
-st.write("**Date of Birth:** 13 / 06 / 2002")
-st.write("**Race / Religion:** Indian / Hindu")
-st.write("**Nationality:** Malaysian")
-st.markdown('</div>', unsafe_allow_html=True)
-
-# --- Contact Details ---
-st.markdown('<div class="resume-box">', unsafe_allow_html=True)
-st.header("📞 Contact Details")
-st.write("📧 **komales047@gmail.com**")
-st.write("📱 **+60 16-2309130**")
-st.write("🏠 No.9, Jalan Kemboja 6, Taman Aman, 42700 Banting, Selangor")
-st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Career Objective ---
 st.markdown('<div class="resume-box">', unsafe_allow_html=True)
@@ -102,15 +87,27 @@ st.write(
 )
 st.markdown('</div>', unsafe_allow_html=True)
 
-# --- Languages ---
+# --- Education ---
 st.markdown('<div class="resume-box">', unsafe_allow_html=True)
-st.header("🌐 Languages")
-st.write("- English: Proficient")
-st.write("- Malay: Proficient")
-st.write("- Tamil: Native (Proficient)")
+st.header("🎓 Education")
+st.write("**Bachelor of Information Technology (Hons.)** – Universiti Malaysia Kelantan (2023 – Present) | Current CGPA: 3.46")
+st.write("**Diploma in Information Technology** – Politeknik Seberang Perai (2021 – 2023) | CGPA: 3.81")
+st.write("**Sijil Pelajaran Malaysia (SPM)** – SMK Methodist Telok Datok (2019)")
 st.markdown('</div>', unsafe_allow_html=True)
 
-# --- Technical Skills ---
+# --- Work Experience ---
+st.markdown('<div class="resume-box">', unsafe_allow_html=True)
+st.header("💼 Work Experience")
+st.subheader("Trainee | Ibu Pejabat Daerah Kuala Langat (Jan 2023 – Jun 2023)")
+st.write(
+    """
+    - Maintained details by entering new and updated case files.  
+    - Developed a system to update information.  
+    """
+)
+st.markdown('</div>', unsafe_allow_html=True)
+
+# --- Skills ---
 st.markdown('<div class="resume-box">', unsafe_allow_html=True)
 st.header("🛠 Technical Skills")
 col1, col2, col3 = st.columns(3)
@@ -127,11 +124,8 @@ with col3:
     st.write("- Python")
     st.write("- Android Studio")
     st.write("- GUI Programming")
-st.markdown('</div>', unsafe_allow_html=True)
 
-# --- Personal Attributes ---
-st.markdown('<div class="resume-box">', unsafe_allow_html=True)
-st.header("🌟 Personal Attributes")
+st.subheader("🌟 Personal Attributes")
 st.write(
     """
     - Fast learner  
@@ -145,24 +139,12 @@ st.write(
 )
 st.markdown('</div>', unsafe_allow_html=True)
 
-# --- Work Experience ---
+# --- Languages ---
 st.markdown('<div class="resume-box">', unsafe_allow_html=True)
-st.header("💼 Work Experience")
-st.subheader("Trainee | Ibu Pejabat Daerah Kuala Langat (Jan 2023 – Jun 2023)")
-st.write(
-    """
-    - Maintained details by entering new and updated case files.  
-    - Developed a system to update information.  
-    """
-)
-st.markdown('</div>', unsafe_allow_html=True)
-
-# --- Education ---
-st.markdown('<div class="resume-box">', unsafe_allow_html=True)
-st.header("🎓 Education")
-st.write("**Bachelor of Information Technology (Hons.)** – Universiti Malaysia Kelantan (2023 – Present) | Current CGPA: 3.46")
-st.write("**Diploma in Information Technology** – Politeknik Seberang Perai (2021 – 2023) | CGPA: 3.81")
-st.write("**Sijil Pelajaran Malaysia (SPM)** – SMK Methodist Telok Datok (2019)")
+st.header("🌐 Languages")
+st.write("- English: Proficient")
+st.write("- Malay: Proficient")
+st.write("- Tamil: Native (Proficient)")
 st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Achievements ---
