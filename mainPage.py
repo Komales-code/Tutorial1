@@ -163,7 +163,12 @@ with right:
     st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown('<div class="resume-box">', unsafe_allow_html=True)
-    st.header("📄 Resume PDF")
+st.header("📄 Resume PDF")
+
+# Create 3 columns and put button in the middle
+col1, col2, col3 = st.columns([1,2,1])
+with col2:
     if st.button("⬇️ Generate Resume PDF"):
         st.info("This is a placeholder button (no PDF generated yet).")
-    st.markdown('</div>', unsafe_allow_html=True)
+
+st.markdown('</div>', unsafe_allow_html=True)
