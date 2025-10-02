@@ -59,7 +59,7 @@ st.markdown(
 col1, col2 = st.columns([1, 4], gap="small")
 
 with col1:
-    st.image("profile.jpeg", width=180)  # Make sure profile.jpeg is in repo
+    st.image("profile.jpg", width=180)  # Make sure profile.jpeg is in repo
 
 with col2:
     st.title("Komaleswari Deva")
