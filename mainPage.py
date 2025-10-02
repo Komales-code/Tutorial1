@@ -3,26 +3,27 @@ import streamlit as st
 # --- Page Config ---
 st.set_page_config(page_title="Resume | Komaleswari Deva", page_icon=":briefcase:", layout="wide")
 
-# --- Custom CSS Styling ---
+# --- Custom CSS Styling (Dark Grey Theme) ---
 st.markdown(
     """
     <style>
     /* Main app background */
     .stApp {
-        background-color: #F7F9F9;
+        background-color: #2C2C2C; /* Dark grey */
+        color: #F5F5F5;            /* Light text */
         font-family: "Arial", sans-serif;
     }
 
     /* Title */
     h1 {
-        color: #2E86C1;
+        color: #EAECEE; /* Light grey */
         font-size: 42px !important;
     }
 
     /* Section headers */
     h2 {
-        color: #1B4F72;
-        border-left: 6px solid #2E86C1;
+        color: #4DB6AC; /* Teal */
+        border-left: 6px solid #4DB6AC;
         padding-left: 10px;
         margin-top: 30px;
         margin-bottom: 10px;
@@ -30,7 +31,7 @@ st.markdown(
 
     /* Subheaders */
     h3 {
-        color: #2E4053;
+        color: #AED6F1; /* Soft blue */
         margin-top: 15px;
     }
 
@@ -38,17 +39,22 @@ st.markdown(
     .resume-box {
         padding: 15px;
         border-radius: 10px;
-        background-color: #F7F9F9;
+        background-color: #3A3A3A; /* Slightly lighter dark grey */
         margin-bottom: 20px;
-        box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+        box-shadow: 0px 2px 6px rgba(0,0,0,0.5);
     }
 
     /* Download button styling */
     .stDownloadButton button {
-        background-color: #2E86C1;
+        background-color: #4DB6AC;
         color: white;
         border-radius: 8px;
         padding: 10px 20px;
+        border: none;
+    }
+    .stDownloadButton button:hover {
+        background-color: #26A69A;
+        color: #EAECEE;
     }
     </style>
     """,
@@ -59,7 +65,7 @@ st.markdown(
 col1, col2 = st.columns([1, 4], gap="small")
 
 with col1:
-    st.image("profile.jpg", width=180)  # Make sure profile.jpeg is in repo
+    st.image("profile.jpeg", width=180)  # Make sure profile.jpeg is in repo
 
 with col2:
     st.title("Komaleswari Deva")
