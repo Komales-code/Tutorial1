@@ -79,10 +79,7 @@ st.markdown('<div class="resume-box">', unsafe_allow_html=True)
 st.header("🎯 Career Objective")
 st.write(
     """
-    Motivated and hardworking Information Technology student currently pursuing a Bachelor’s degree.  
-    Skilled in programming, database management, and web application development.  
-    Seeking opportunities to apply technical knowledge and interpersonal skills in real-world IT projects 
-    while continuously learning and contributing to organizational success.
+    Motivated and hardworking Information Technology student currently pursuing a Bachelor’s degree. Skilled in programming, database management, and web application development. Seeking opportunities to apply technical knowledge and interpersonal skills in real-world IT projects while continuously learning and contributing to organizational success.
     """
 )
 st.markdown('</div>', unsafe_allow_html=True)
