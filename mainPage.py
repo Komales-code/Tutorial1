@@ -7,7 +7,7 @@ st.set_page_config(page_title="Resume | Your Name", page_icon=":briefcase:", lay
 col1, col2 = st.columns([1, 4], gap="small")
 
 with col1:
-    st.image("profile.jpeg", width=180)  # Your profile photo
+    st.image("profile.jpg", width=180)  # Your profile photo
 
 with col2:
     st.title("Your Full Name")
