@@ -1,53 +1,76 @@
 import streamlit as st
 
+# --- Page Config ---
+st.set_page_config(page_title="Resume | Komaleswari Deva", page_icon=":briefcase:", layout="wide")
+
+# --- Custom CSS Styling ---
 st.markdown(
     """
     <style>
-    /* Background */
+    /* Main app background */
     .stApp {
         background-color: #fdfdfd;
+        font-family: "Arial", sans-serif;
+    }
+
+    /* Title */
+    h1 {
+        color: #2E86C1;
+        font-size: 42px !important;
     }
 
     /* Section headers */
-    h2, h3 {
-        color: #4CAF50;  /* Green headers */
+    h2 {
+        color: #1B4F72;
+        border-left: 6px solid #2E86C1;
+        padding-left: 10px;
+        margin-top: 30px;
+        margin-bottom: 10px;
     }
 
-    /* Custom resume box */
+    /* Subheaders */
+    h3 {
+        color: #2E4053;
+        margin-top: 15px;
+    }
+
+    /* Resume content boxes */
     .resume-box {
         padding: 15px;
         border-radius: 10px;
-        background-color: #f0f2f6;
+        background-color: #F7F9F9;
         margin-bottom: 20px;
+        box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
+    }
+
+    /* Download button styling */
+    .stDownloadButton button {
+        background-color: #2E86C1;
+        color: white;
+        border-radius: 8px;
+        padding: 10px 20px;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
 
-st.markdown('<div class="resume-box">', unsafe_allow_html=True)
-st.subheader("🎓 Education")
-st.write("Bachelor of IT, UMK (2023 – Present) | CGPA: 3.46")
-st.markdown('</div>', unsafe_allow_html=True)
-
-# --- Page Config ---
-st.set_page_config(page_title="Resume | Komaleswari Deva", page_icon=":briefcase:", layout="wide")
-
-# --- Hero Section ---
+# --- Header Section ---
 col1, col2 = st.columns([1, 4], gap="small")
 
 with col1:
-    st.image("profile.jpg", width=180)  # Replace with your profile photo (JPEG/PNG)
+    st.image("profile.jpeg", width=180)  # Make sure profile.jpeg is in repo
 
 with col2:
     st.title("Komaleswari Deva")
     st.write("💻 IT Student | Universiti Malaysia Kelantan")
-    st.write("📧 komales047@gmail.com | 📱 +60 16-2309130")
+    st.write("📧 **komales047@gmail.com** | 📱 **+60 16-2309130**")
     st.write("🏠 No.9, Jalan Kemboja 6, Taman Aman, 42700 Banting, Selangor")
     st.markdown("---")
 
 # --- Career Objective ---
-st.subheader("🎯 Career Objective")
+st.markdown('<div class="resume-box">', unsafe_allow_html=True)
+st.header("🎯 Career Objective")
 st.write(
     """
     Motivated and hardworking Information Technology student currently pursuing a Bachelor’s degree.  
@@ -56,28 +79,31 @@ st.write(
     while continuously learning and contributing to organizational success.
     """
 )
-st.markdown("---")
+st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Education ---
-st.subheader("🎓 Education")
-st.write("**Bachelor of Information Technology (Hons.)**, Universiti Malaysia Kelantan (2023 – Present) | Current CGPA: 3.46")
-st.write("**Diploma in Information Technology**, Politeknik Seberang Perai (2021 – 2023) | CGPA: 3.81")
-st.write("**Sijil Pelajaran Malaysia (SPM)**, SMK Methodist Telok Datok (2019)")
-st.markdown("---")
+st.markdown('<div class="resume-box">', unsafe_allow_html=True)
+st.header("🎓 Education")
+st.write("**Bachelor of Information Technology (Hons.)** – Universiti Malaysia Kelantan (2023 – Present) | Current CGPA: 3.46")
+st.write("**Diploma in Information Technology** – Politeknik Seberang Perai (2021 – 2023) | CGPA: 3.81")
+st.write("**Sijil Pelajaran Malaysia (SPM)** – SMK Methodist Telok Datok (2019)")
+st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Work Experience ---
-st.subheader("💼 Work Experience")
-st.markdown("**Trainee | Ibu Pejabat Daerah Kuala Langat** (Jan 2023 – Jun 2023)")
+st.markdown('<div class="resume-box">', unsafe_allow_html=True)
+st.header("💼 Work Experience")
+st.subheader("Trainee | Ibu Pejabat Daerah Kuala Langat (Jan 2023 – Jun 2023)")
 st.write(
     """
     - Maintained details by entering new and updated case files.  
     - Developed a system to update information.  
     """
 )
-st.markdown("---")
+st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Skills ---
-st.subheader("🛠 Technical Skills")
+st.markdown('<div class="resume-box">', unsafe_allow_html=True)
+st.header("🛠 Technical Skills")
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -105,39 +131,45 @@ st.write(
     - Positive attitude  
     """
 )
-st.markdown("---")
+st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Languages ---
-st.subheader("🌐 Languages")
+st.markdown('<div class="resume-box">', unsafe_allow_html=True)
+st.header("🌐 Languages")
 st.write("- English: Proficient")
 st.write("- Malay: Proficient")
 st.write("- Tamil: Native (Proficient)")
-st.markdown("---")
+st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Achievements ---
-st.subheader("🏆 Achievements")
+st.markdown('<div class="resume-box">', unsafe_allow_html=True)
+st.header("🏆 Achievements")
 st.write("**Final Year Project (Diploma)** – Developed a Physiotherapy Centre Web Application using HTML, CSS, PHP, JS, MySQL")
 st.write("**Academic Excellence** – Diploma CGPA: 3.81")
 st.write("**Kabaddi Competition 2016** – 2nd Place")
 st.write("**Short Story Writing Competition 2018** – Consolation Prize")
-st.markdown("---")
+st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Co-curricular & Leadership ---
-st.subheader("🤝 Co-Curricular & Leadership Activities")
+st.markdown('<div class="resume-box">', unsafe_allow_html=True)
+st.header("🤝 Co-Curricular & Leadership Activities")
 st.write("**2024 | Fun Run (Sultan Selangor Birthday)** – Completed 6km run")
 st.write("**2024 | Aviraa 1.0 (UMK)** – Facilitator, assisted in event coordination")
 st.write("**2019 | Kabaddi Club (SMK Methodist Telok Datok)** – Vice Secretary, managed meetings & correspondence")
 st.write("**2019 | Girl Squad (SMK Methodist Telok Datok)** – Secretary, organized meetings & administration")
-st.markdown("---")
+st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Interests ---
-st.subheader("🎯 Interests")
+st.markdown('<div class="resume-box">', unsafe_allow_html=True)
+st.header("🎯 Interests")
 st.write("Hiking | Running | Badminton | Travelling | Cooking")
-st.markdown("---")
+st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Referees ---
-st.subheader("📞 Referees")
+st.markdown('<div class="resume-box">', unsafe_allow_html=True)
+st.header("📞 Referees")
 st.write("**Ts. Dr. Nor Alina Binti Ismail** – Advisor, University Malaysia Kelantan | 📱 +60 19-2200139")
+st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Download Resume Button ---
 with open("KOMALESWARI DEVA.pdf", "rb") as pdf_file:
