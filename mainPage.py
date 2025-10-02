@@ -163,7 +163,7 @@ with right:
     st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown('<div class="resume-box">', unsafe_allow_html=True)
-st.header("📄 Resume PDF")
+    st.header("📄 Resume PDF")
 
     st.markdown('<div class="resume-box">', unsafe_allow_html=True)
     st.header("📄 Resume PDF")
