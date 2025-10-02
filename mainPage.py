@@ -109,30 +109,27 @@ st.markdown('<div class="resume-box">', unsafe_allow_html=True)
 st.header("🛠 Skills")
 
 st.subheader("Technical Skills")
-col1, col2, col3 = st.columns(3)
+col1, col2= st.columns(2)
 
 with col1:
     st.write("- MS Office")
     st.write("- VB Studio")
     st.write("- Adobe Animate")
+
 with col2:
-    st.write("- HTML & CSS")
-    st.write("- PHP")
-    st.write("- Java")
-with col3:
     st.write("- Python")
     st.write("- Android Studio")
     st.write("- GUI Programming")
 
-st.subheader("🌟 Personal Attributes")
-col4, col5, col6 = st.columns(3)
+st.subheader("Personal Attributes")
+col3, col4 = st.columns(2)
 
-with col4:
+with col3:
     st.write("- Fast Learner")
     st.write("- Active Listener")
     st.write("- Information Literacy")
 
-with col5:
+with col4:
     st.write("- Team Player")
     st.write("- Innovative")
     st.write("- Easy Adaptability")
@@ -178,5 +175,17 @@ st.write("**Ts. Dr. Nor Alina Binti Ismail** – Advisor, University Malaysia Ke
 st.markdown('</div>', unsafe_allow_html=True)
 
 # --- Download Resume Button ---
-with open("KOMALESWARI DEVA.pdf", "rb") as pdf_file:
-    st.download_button("📄 Download My Resume (PDF)", pdf_file, "Komaleswari_Deva_Resume.pdf", mime="application/pdf")
+st.markdown('<div class="resume-box">', unsafe_allow_html=True)
+st.header("📄 Resume PDF")
+
+try:
+    with open("resume.pdf", "rb") as pdf_file:
+        st.download_button(
+            "⬇️ Download My Resume",
+            pdf_file,
+            "Komaleswari_Deva_Resume.pdf",
+            mime="application/pdf"
+        )
+except FileNotFoundError:
+    st.error("⚠️ Resume PDF not found. Please upload `resume.pdf` to the repo.")
+st.markdown('</div>', unsafe_allow_html=True)
