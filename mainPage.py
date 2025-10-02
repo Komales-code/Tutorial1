@@ -16,13 +16,13 @@ st.markdown(
 
     h1 {
         color: #EAECEE;
-        font-size: 22px !important;
+        font-size: 28px !important;
         margin-bottom: 5px;
     }
 
     h2 {
         color: #4DB6AC;
-        font-size: 15px !important;
+        font-size: 18px !important;
         border-left: 5px solid #4DB6AC;
         padding-left: 8px;
         margin-top: 20px;
@@ -31,12 +31,12 @@ st.markdown(
 
     h3 {
         color: #AED6F1;
-        font-size: 12px !important;
+        font-size: 16px !important;
         margin-top: 8px;
     }
 
     .resume-box {
-        padding: 5px;
+        padding: 8px;
         border-radius: 8px;
         background-color: #3A3A3A;
         margin-bottom: 12px;
