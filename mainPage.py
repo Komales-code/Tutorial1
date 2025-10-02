@@ -1,5 +1,35 @@
 import streamlit as st
 
+st.markdown(
+    """
+    <style>
+    /* Background */
+    .stApp {
+        background-color: #fdfdfd;
+    }
+
+    /* Section headers */
+    h2, h3 {
+        color: #4CAF50;  /* Green headers */
+    }
+
+    /* Custom resume box */
+    .resume-box {
+        padding: 15px;
+        border-radius: 10px;
+        background-color: #f0f2f6;
+        margin-bottom: 20px;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown('<div class="resume-box">', unsafe_allow_html=True)
+st.subheader("🎓 Education")
+st.write("Bachelor of IT, UMK (2023 – Present) | CGPA: 3.46")
+st.markdown('</div>', unsafe_allow_html=True)
+
 # --- Page Config ---
 st.set_page_config(page_title="Resume | Komaleswari Deva", page_icon=":briefcase:", layout="wide")
 
