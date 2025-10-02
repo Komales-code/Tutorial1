@@ -16,13 +16,13 @@ st.markdown(
 
     h1 {
         color: #EAECEE;
-        font-size: 28px !important;
+        font-size: 22px !important;
         margin-bottom: 5px;
     }
 
     h2 {
         color: #4DB6AC;
-        font-size: 18px !important;
+        font-size: 15px !important;
         border-left: 5px solid #4DB6AC;
         padding-left: 8px;
         margin-top: 20px;
@@ -31,12 +31,12 @@ st.markdown(
 
     h3 {
         color: #AED6F1;
-        font-size: 16px !important;
+        font-size: 12px !important;
         margin-top: 8px;
     }
 
     .resume-box {
-        padding: 8px;
+        padding: 5px;
         border-radius: 8px;
         background-color: #3A3A3A;
         margin-bottom: 12px;
@@ -67,9 +67,9 @@ st.markdown(
 )
 
 # --- Header Section ---
-col1, col2 = st.columns([1, 3], gap="small")
+col1, col2 = st.columns([1, 4], gap="small")
 with col1:
-    st.image("profile.jpg", width=100)  # Profile photo
+    st.image("profile.jpeg", width=150)  # Profile photo
 with col2:
     st.title("Komaleswari Deva")
     st.write("💻 IT Student | Universiti Malaysia Kelantan")
@@ -99,9 +99,9 @@ with left:
     st.markdown('<div class="resume-box">', unsafe_allow_html=True)
     st.header("🛠 Skills")
     st.subheader("Technical Skills")
-    st.write("- MS Office\n- VB Studio\n- Adobe Animate\n- HTML & CSS")
+    st.write("- MS Office\n- VB Studio\n- Adobe Animate\n- HTML & CSS\n- PHP\n- Java\n- Python\n- Android Studio\n- GUI Programming")
     st.subheader("Personal Attributes")
-    st.write("- Fast learner\n- Active listener\n- Information literacy\n- Team player")
+    st.write("- Fast learner\n- Active listener\n- Information literacy\n- Team player\n- Innovative\n- Easy adaptability\n- Positive attitude")
     st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown('<div class="resume-box">', unsafe_allow_html=True)
@@ -120,7 +120,10 @@ with right:
     st.header("🎯 Career Objective")
     st.write(
         """
-        Motivated and hardworking Information Technology student currently pursuing a Bachelor’s degree. Skilled in programming, database management, and web application development.
+        Motivated and hardworking Information Technology student currently pursuing a Bachelor’s degree.  
+        Skilled in programming, database management, and web application development.  
+        Seeking opportunities to apply technical knowledge and interpersonal skills in real-world IT projects 
+        while continuously learning and contributing to organizational success.
         """
     )
     st.markdown('</div>', unsafe_allow_html=True)
@@ -143,12 +146,15 @@ with right:
     st.write("- Final Year Project: Physiotherapy Centre Web Application (HTML, CSS, PHP, JS, MySQL)")
     st.write("- Academic Excellence: Diploma CGPA 3.81")
     st.write("- Kabaddi Competition 2016 – 2nd Place")
+    st.write("- Short Story Writing Competition 2018 – Consolation Prize")
     st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown('<div class="resume-box">', unsafe_allow_html=True)
     st.header("🤝 Co-Curricular & Leadership")
     st.write("**2024 | Fun Run (Sultan Selangor Birthday)** – Completed 6km run")
     st.write("**2024 | Aviraa 1.0 (UMK)** – Facilitator, assisted in event coordination")
+    st.write("**2019 | Kabaddi Club** – Vice Secretary, managed meetings & correspondence")
+    st.write("**2019 | Girl Squad** – Secretary, organized meetings & administration")
     st.markdown('</div>', unsafe_allow_html=True)
 
     st.markdown('<div class="resume-box">', unsafe_allow_html=True)
